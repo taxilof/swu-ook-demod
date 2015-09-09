@@ -20,7 +20,7 @@
 * compile fir filter with `gcc -o fir fir.c` and make it executable `chmod +x fir`
 * run everything and show bitstream: `rtl_fm -s 48k -C -f 155461000 -g 40 | ./fir | ./swu-ook-demod.py | ./swu-ook-crc.py | grep bitstream`
 * debug mode (shows plot for every frame): `rtl_fm -s 48k -C -f 155461000 -g 40 | ./fir | ./swu-ook-demod.py -d` 
-** the plot pauses the process, to continue just close the plot
+ * the plot pauses the process, to continue just close the plot (ctrl+w)
 
 ## notes:
 * each byte is sent in reverse (mirrored), so take care (swu-ook-crc does)
